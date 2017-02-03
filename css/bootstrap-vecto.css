@@ -1,0 +1,186 @@
+
+/* navbar*/
+
+.navbar-nav, .navbar-nav>li {
+    float: none !important;
+        text-align: center;
+}
+.navbar-nav>li {
+    display: inline-block;
+}
+.navbar-nav>li a {
+    color: #333;
+}
+
+/* Form */
+
+.form-control {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #fff;
+    box-shadow: none;
+    border-radius: 0px;
+    outline: none;
+    color: #fff;
+}
+.form-control:focus  {
+    box-shadow: none;
+    border-color:  transparent transparent #fff transparent;
+}
+.form-group {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+label {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 1em;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+input:focus + label, input.active + label, textarea:focus + label, input.active + label {
+    bottom: 20px !important;
+    font-size: 0.6em !important;
+}
+input::-webkit-input-placeholder {
+    color: #fff !important;
+}
+input::-moz-input-placeholder {
+      color: #fff !important;
+}
+input::-ms-input-placeholder {
+      color: #fff !important;
+}
+textarea {
+    vertical-align: middle;
+}
+/*button*/
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0px;
+    transition: all linear 0.25s;
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+    -o-transition: all linear 0.25s;
+}
+.btn-outline:hover, .btn-outline:focus {
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+    outline: none !important;
+}
+.btn-remove {
+    color: #C80C17;
+}
+/*modal*/
+.modal-header {
+    border: none;
+}
+.close {
+    color: #fff;
+    opacity: 0.8;
+}
+.modal-footer {
+    border: none;
+}
+
+
+
+
+/*Lable*/
+
+input[switch] + label {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+input[switch] {
+  display: none;
+}
+input[switch] + label {
+  font-size: 1em;
+  line-height: 1;
+  width: 50px;
+  height: 25px;;
+  background-color: transparent;
+    border: 1px solid #fff;
+  background-image: none;
+  border-radius: 2rem;
+  padding: 0.16667rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
+  font-family: inherit;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+input[switch] + label:before {
+  /* Label */
+  text-transform: uppercase;
+  color: #fff;
+    font-size: 10px;
+  content: attr(data-off-label);
+  display: block;
+  font-family: inherit;
+  font-family: FontAwesome, inherit;
+  font-weight: 500;
+
+  line-height: 1.74rem;
+  position: absolute;
+  right: 0.21667rem;
+  margin: 0.21667rem;
+  top: 3;
+  text-align: center;
+  min-width: 1.66667rem;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+input[switch] + label:after {
+  /* Slider */
+  content: '';
+  position: absolute;
+  left: 0.16667rem;
+    top: 1px;
+  background-color: #f7f7f7;
+  box-shadow: none;
+  border-radius: 2rem;
+  height: 20px;
+  width: 20px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+input[switch]:checked + label {
+  background-color: #fff;
+}
+input[switch]:checked + label:before {
+  color: #333;
+  content: attr(data-on-label);
+  right: auto;
+  left: 3px;
+    top: 2px;
+    font-size: 10px;
+}
+input[switch]:checked + label:after {
+  left: 26px;
+  background-color: #333;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.check {
+    color: #fff;
+    vertical-align: middle;
+}

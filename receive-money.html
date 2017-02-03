@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>sludger</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-vecto.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/room.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="body">
+<!-- Large modal -->
+
+
+<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Payment Card</h4>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+   
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+       <label for="exampleInputEmail1">Name</label>
+  </div>
+  <div class="form-group">
+
+      <textarea type="text" rows="1" class="form-control" id="exampleInputPassword1" placeholder="Description"></textarea>
+  </div>
+  
+  <div class="form-group">
+   
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+       <label for="exampleInputEmail1">Amount</label>
+  </div>
+           
+  <div class="form-group check">
+           Auto Split
+            <input type="checkbox" id="switch1" checked switch="none" /> 
+  <label for="switch1" data-on-label="Yes" data-off-label="No"></label>
+           </div>
+           
+           
+           
+           <div class="add-payee">
+           <h4> Payee Details</h4>
+           <div class="form-group">
+   
+    <input type="mail" class="form-control" id="exampleInputEmail1" placeholder="">
+       <label for="exampleInputEmail1">Email</label>
+  </div>
+               <div class="form-group">
+   
+    <input type="number" class="form-control" id="exampleInputEmail1" placeholder="">
+       <label for="exampleInputEmail1">Mobile Number</label>
+  </div>
+               <div class="form-group">
+   
+    <input type="number" class="form-control" id="exampleInputEmail1" placeholder="">
+       <label for="exampleInputEmail1">Amount</label>
+  </div>
+                <a class="btn btn-remove"><i class="fa fa-trash fa-2x"></i></a>
+           <div class="action-payee-button form-group text-right">
+              
+               <a class="btn btn-outline">Add Payee</a>
+               </div>
+           </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <nav class="navbar navbar-fixed-top product">
+        <div class="container">
+            <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+                
+                <img class="nav-bar-img" src="img/nav-img-light.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="#">RECEIVE MONEY</a></li>
+           <li><a href="#">SEND MONEY</a></li>
+        <li class="hidden-xs nav-image-active"><a href="#"><img class="nav-img" src="img/nav-img-dark.png"></a></li>
+       
+        <li><a href="#">PROFILE</a></li>
+        <li class="logout"><a href="#"> <i class="fa fa-sign-out" aria-hidden="true"></i> LOGOUT</a></li>
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="container room-list receive-money">
+<div class="row">
+    
+        <div class="col-md-4 col-sm-6">
+            <a href="#" class="r-c-hover">
+    <div class="room-circle-260">
+            <h4 class="rec-title">RECEIVE MONEY</h4>
+        <p>$ <span class="highlight">200</span></p>
+        <p class="help"><small>Paid</small></p>
+        <div class="seprate-line"></div>
+        <p>$ <span class="highlight white">200</span></p>
+        <p class="help"><small>Total</small></p>
+         <div class="user text-center">
+                <span class="highlight white">10</span><i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+               
+    </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+            <a href="#" class="r-c-hover">
+    <div class="room-circle-260">
+            <h4 class="rec-title">RECEIVE MONEY</h4>
+        <p>$ <span class="highlight">200</span></p>
+        <p class="help"><small>Paid</small></p>
+        <div class="seprate-line"></div>
+        <p>$ <span class="highlight white">200</span></p>
+        <p class="help"><small>Total</small></p>
+         <div class="user text-center">
+                <span class="highlight white">10</span><i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+               
+    </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+            <a href="#" class="r-c-hover">
+    <div class="room-circle-260">
+            <h4 class="rec-title">RECEIVE MONEY</h4>
+        <p>$ <span class="highlight">200</span></p>
+        <p class="help"><small>Paid</small></p>
+        <div class="seprate-line"></div>
+        <p>$ <span class="highlight white">200</span></p>
+        <p class="help"><small>Total</small></p>
+         <div class="user text-center">
+                <span class="highlight white">10</span><i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+               
+    </a>
+    </div>
+    
+        
+    <div class="col-md-4 col-sm-6">
+            <a href="#" class="r-c-hover" data-toggle="modal" data-target=".modal">
+    <div class="room-circle-260 empty">
+            <div class="add-more">
+<i class="fa fa-plus" aria-hidden="true"></i>
+                <p>Add More</p>
+        </div> 
+            </div>
+            </a>
+    </div>
+        </div>
+      
+    </div>
+    <!-- /.container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {  
+           $(function() {
+    $(".nav-image-active")
+        .mouseover(function() { 
+            $(".nav-image-active a img").attr("src", "img/nav-img-dark-active.png");
+        })
+        .mouseout(function() {
+              $(".nav-image-active a img").attr("src", "img/nav-img-dark.png");
+        });
+});
+            //form
+            
+                    $('input').blur(function () {
+    if($(this).val() == '') {
+    $(this).removeClass('active');
+    }
+                else {
+                    $(this).addClass('active');
+                }
+            });
+            
+        
+        
+        
+        
+        //nav scroll
+            
+            $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 100) {
+        //clearHeader, not clearheader - caps H
+        $(".navbar-fixed-top").addClass("bg");
+         $(".nav-image-active a img").attr("src", "img/nav-img-light.png");
+    }
+                else {
+                     $(".navbar-fixed-top").removeClass("bg");
+         $(".nav-image-active a img").attr("src", "img/nav-img-dark.png"); 
+                }
+}); //missing );
+            
+            
+        });
+    </script>
+</body>
+
+</html>

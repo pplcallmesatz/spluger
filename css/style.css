@@ -1,0 +1,264 @@
+body {
+    font-size: 16px;
+}
+a {
+    cursor: pointer;
+}
+h4 , h5{
+    color: #fff;
+    font-weight: 400;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+.m-t {
+    margin-top: 30px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+}
+.white {
+    color: #fff;
+}
+.copy-content {
+    float: left;
+}
+.social {
+        float: right;
+    }
+.social a{
+    color: #C80C17 !important;        
+    width: 30px;
+    height: 30px;
+}
+.social a i {
+    font-size: 20px;
+    line-height: 30px;
+    vertical-align: middle
+}
+/*
+.social a.facebook i{
+     padding: 5px 10px;
+}
+.social a.twitter i{
+     padding: 6px 6px;
+}
+.social a.instagram i{
+     padding: 6px 6px;
+}
+*/
+.container.login-page {
+    padding: 0px !important;
+    border: 1px solid #333; 
+/*    border-top-color: transparent;*/
+}
+.i-b {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+.copyrights {
+    margin: 5px 0px 0px 0px;
+}
+.copyrights a:hover {
+    color: #C80C17 !important;
+    text-decoration: underline;
+}
+footer.index.container {
+    position: absolute;
+    bottom: 0;
+       width: 100%;
+}
+.logo-hang {
+    position: absolute;
+    background-color: #333;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: -160px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+        transition: all linear 0.5s;
+        -webkit-transition: all linear 0.5s;
+        -moz-transition: all linear 0.5s;
+        -o-transition: all linear 0.5s;
+}
+.logo-hang img {
+    height: 60px;
+   margin-top: 82px;
+}
+.m-hide {
+    transition: all linear 1s; 
+    -webkit-transition: all linear 1s; 
+    -moz-transition: all linear 1s; 
+    -o-transition: all linear 1s; 
+}
+.active-signup .logo-hang, .active-login .logo-hang {
+    margin: -75px !important;
+}
+
+.active-signup .cloud, .active-login .cloud {
+    opacity: 0;
+}
+.active-signup .m-hide, .active-login .m-hide {
+    opacity: 0;
+}
+
+
+.cloud {
+    position: absolute;
+        width: 100%;
+    top: 60px;
+     transition: all linear 0.5s;
+        -webkit-transition: all linear 0.5s;
+        -moz-transition: all linear 0.5s;
+        -o-transition: all linear 0.5s;
+}
+.cloud-1, .cloud-2 {
+    height: 80px;
+    position: absolute;
+}
+.cloud-1 {
+    left: 50%;
+    transform: translateX(-74%);
+         animation-name: cloudMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+    -webkit-transform: translateX(-74%);
+         -webkit-animation-name: cloudMove;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    
+    -moz-transform: translateX(-74%);
+         -moz-animation-name: cloudMove;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out; 
+    
+    -o-transform: translateX(-74%);
+         -o-animation-name: cloudMove;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+}
+.cloud-2 {
+ right: 50%;
+    z-index: 20;
+    transform: translateX(74%);
+         animation-name: cloudMovee;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+   
+    -webkit-transform: translateX(74%);
+         -webkit-animation-name: cloudMovee;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+   
+    -moz-transform: translateX(74%);
+         -moz-animation-name: cloudMovee;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+    
+    -o-transform: translateX(74%);
+         -o-animation-name: cloudMovee;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -o-animation-timing-function: ease-in-out;
+}
+.moon{
+    height:90px;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+}
+@media (max-width:767px) {
+     .social,  .copy-content {
+        float: none !important;
+         text-align: center;
+             margin-top: 5px;
+    }
+    .two {
+        top: 25% !important;
+    }
+}
+
+
+
+
+@keyframes cloudMove {
+    0% {
+        left: 50%;
+    }
+    100% {
+        left: 35%;
+    }
+}
+@-webkit-keyframes cloudMove {
+    0% {
+        left: 50%;
+    }
+    100% {
+        left: 35%;
+    }
+}
+@-moz-keyframes cloudMove {
+    0% {
+        left: 50%;
+    }
+    100% {
+        left: 35%;
+    }
+}
+
+
+@keyframes cloudMovee {
+    0% {
+        right: 50%;
+    }
+    100% {
+        right: 35%;
+    }
+}
+@-webkit-keyframes cloudMovee {
+    0% {
+        right: 50%;
+    }
+    100% {
+        right: 35%;
+    }
+}
+@-moz-keyframes cloudMovee {
+    0% {
+        right: 50%;
+    }
+    100% {
+        right: 35%;
+    }
+}

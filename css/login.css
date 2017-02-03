@@ -1,0 +1,119 @@
+
+.one {
+  min-height: 100vh;
+    position: relative;
+}
+.two, .three, .four, .five {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.two img {
+    height: 100px;
+}
+.three, .four, .five {
+    width: 0px;
+    height: 0px;
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all linear 1s;
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -o-transition: all linear 1s;
+}
+.active-login .three, .active-signup .four, .active-forgetpass .five {
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+    z-index: 20;
+}
+
+.login, .signup {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    background-color: #333;
+    z-index: 10;
+}
+.signup-form {
+    padding-top: 30px;
+}
+.signup-form form {
+    margin-bottom: 20px;
+}
+.signup-form h4 {
+     margin-bottom: 30px;
+}
+.login {
+    left: 0;
+        margin-left: -75px;
+    text-align: right;
+
+}
+.signup {
+    right: 0;
+            margin-right: -75px;
+    text-align: left;
+
+}
+
+.login img, .signup img {
+    height: 50px;
+    line-height: 150px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.login-form {
+    padding: 50px;
+}
+.login-form h4 {
+    margin-bottom: 40px;
+}
+.login-form form {
+    margin-bottom: 30px;
+}
+.forgotPass, .signupSecondary, .login-close a, .signup-close a, .loginSecondary, .registered, .forgot-close a{
+    color: #fff !important;
+}
+.forgotPass, .signupSecondary, .loginSecondary {
+    text-decoration: underline;
+}
+
+.login-close, .signup-close, .forgot-close {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+}
+
+@media (max-width: 768px){
+    .login img, .signup img {
+        height: 30px;
+    }
+    .login, .signup {
+        padding-top: 60px;
+    }
+    .login {
+        padding-right: 30px;
+    }
+    .signup {
+        padding-right: 30px;
+    }
+}
